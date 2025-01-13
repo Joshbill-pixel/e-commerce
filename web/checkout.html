@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script defer src="https://kit.fontawesome.com/252fa3dfa3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="cart-header">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <!-- Hamburger Menu -->
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+    
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../img/logo.png" alt="MatrizPlaza Logo">
+                        </a>
+                    </div>
+    
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <form action="#">
+                            <input type="text" placeholder="Search for products, brands and more">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    
+                </div>
+    
+                <!-- Collapsible Links -->
+                <div class="navbar-links">
+                    <ul>
+                        <img class="fav_logo" src="../img/fav_logo.png" alt="Clients Skin Care logo">
+                        <li><a href="../index.html" active>Home</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CHECKOUT FORM -->
+    <section class="checkout-container">
+        <div class="checkout-wrapper">
+            <!-- ORDER SUMMARY -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <ul id="cart-items-list">
+                    <!-- Cart items will be inserted here dynamically -->
+                </ul>
+                <p class="total-price">Total: ₦<span id="total-price">0.00</span></p>
+            </div>
+
+            <!-- BILLING INFORMATION -->
+            <div class="billing-info">
+                <h2>Billing Information</h2>
+                <form id="billing-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="4"></textarea>
+                
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <p id="error"></p>
+                
+                    <button type="submit" class="btn">Proceed to Payment</button>
+                </form>                
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="logo">
+            <a href="#">
+                <img src="../img/logo.png" alt="MatrizPlaza Logo">
+            </a>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Download our app</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Loyalty Scheme</a></li>
+                    <li><a href="#">Pharmacy Service</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Cares Foundation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Head Office: 45, Saka Tinubu Street, Victoria Island, Lagos</p>
+                <p>Sales No: 08187122408</p>
+                <p>Customer Care No: 02015150550, 02015150551, 02015150552</p>
+                <p class="mail"><a href="mailto:matrizplaza@gmail.com">matrizplaza@gmail.com</a></p>
+            </div>
+            <div class="footer-column newsletter">
+                <h4>Subscribe To Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <!-- <div class="footer-certificates">
+                    <img src="img/certificate.png" alt="Certificate">
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Terms & Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>&copy; 2025 - MatrizPlaza. All rights reserved.</p>
+            <div class="social-links">
+                <span>Follow & Engage with us</span>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/main.js"></script>
+    <script src="../script/checkout.js"></script>
+</body>
+</html>

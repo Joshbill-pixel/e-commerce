@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatrizPlaza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="https://kit.fontawesome.com/252fa3dfa3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="search_display" id="search-display">
+            <button class="close-btn" onclick="closeSearchDisplay()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="MatrizPlaza Logo">
+                </a>
+            </div>
+            <div class="search-bar-display">
+                <form action="#">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="MatrizPlaza Logo">
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search for products, brands and more">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <button class="icon-box" id="search-icon">
+                        <a href="#" class="icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </button>
+                    <button class="icon-box">
+                        <a href="web/cart.html" class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <span class="badge">0</span>
+                    </button>
+                    <button class="icon-box">
+                        <a href="#" class="icon">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <span class="badge wishlist-badge">0</span>
+                    </button>
+                    <a href="#" class="icon_user"><i class="fas fa-user"></i></a>
+                    <a href="#" class="sign">Sign Up</a>
+                </div>
+                
+            </div>
+
+            <!-- Collapsible Links -->
+            <div class="navbar-links">
+                <ul>
+                    <img class="fav_logo" src="img/fav_logo.png" alt="Clients Skin Care logo">
+                    <li><a href="index.html" active>All Products</a></li>
+                    <li><a href="#">Drugs</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Toiletries</a></li>
+                    <li><a href="#">Mother & Baby Care</a></li>
+                    <li><a href="#">Deodorant & Antiperspirants</a></li>
+                    <li><a href="#">Healt Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- IMAGE CAROUSEL -->
+    <div id="carousel" class="carousel">
+        <div class="carousel-images">
+            <img src="img/caro1.webp" alt="Image 1" class="carousel-image active">
+            <img src="img/caro2.png" alt="Image 2" class="carousel-image">
+            <img src="img/caro3.webp" alt="Image 3" class="carousel-image">
+        </div>
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control prev"><i class="fas fa-angle-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <!-- IMAGE CAROUSEL END -->
+
+    <!-- CARDS START-->
+    <div class="h_txt">
+        <h1>Simplify Your Skin Care Journey With One Click</h1>
+    </div>
+    <section class="container-fluid cards">
+        <div class="row">
+            <div class="card-1">
+                <h3>Chat with a Seller</h3>
+                <div class="txt">
+                    <p>Chat Now</p>
+                    <button type="button" class="btn1">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="card-2">
+                <h3>Chat with a Seller</h3>
+                <div class="txt">
+                    <p>Chat Now</p>
+                    <button type="button" class="btn1">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="card-3">
+                <h3>Chat with a Seller</h3>
+                <div class="txt">
+                    <p>Chat Now</p>
+                    <button type="button" class="btn1">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="card-4">
+                <h3>Chat with a Seller</h3>
+                <div class="txt">
+                    <p>Chat Now</p>
+                    <button type="button" class="btn1">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CARDS END-->
+
+    <!-- CARD CAROUSEL -->
+     <div class="htxt">
+        <h1>Our Category</h1>
+        <button>
+            <a href="#">
+                All Products
+            </a>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+     </div>
+
+     <!-- <div class="min_nav">
+        <ul class="min_nav_ul">
+            <li class="min_nav_li"><a href="#" onclick="loadCarousel('card_carousel.html')"></a>Drugs Category</li>
+            <li><a href="#" onclick="loadCarousel('card_carousel.html')"></a>Non-drugs Category</li>
+        </ul>
+     </div> -->
+     <div class="min_nav">
+        <form action="" method="post" id="load-content-form1">
+            <button type="submit" class="btn active1">Drugs Category</button>
+         </form>
+        <form action="" method="post" id="load-content-form2">
+            <button type="submit" class="btn active2">Non-drugs Category</button>
+        </form>
+     </div>
+     <hr>
+     
+     <div id="content-container"></div>
+
+    <!-- PRODUCT CARDS -->
+    <!-- ₦ -->
+    <div class="htxt htxt2">
+        <h1>New Arrival</h1>
+        <button>
+            <a href="#">
+                See All Products
+            </a>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+     </div>
+
+    <section class="product-grid container-fluid">
+        <div class="row">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="imgs1 product-image"></div>
+                <h3 class="product-title">Product 1</h3>
+                <p class="product-price">₦2,950.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="imgs2"></div>
+                <h3 class="product-title">Product 2</h3>
+                <p class="product-price">₦3,200.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="imgs3"></div>
+                <h3 class="product-title">Product 3</h3>
+                <p class="product-price">₦4,950.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="imgs4"></div>
+                <h3 class="product-title">Product 4</h3>
+                <p class="product-price">₦5,000.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="imgs5"></div>
+                <h3 class="product-title">Product 5</h3>
+                <p class="product-price">₦6,500.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="imgs6"></div>
+                <h3 class="product-title">Product 6</h3>
+                <p class="product-price">₦7,900.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <div class="imgs7"></div>
+                <h3 class="product-title">Product 7</h3>
+                <p class="product-price">₦8,500.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <div class="imgs8"></div>
+                <h3 class="product-title">Product 8</h3>
+                <p class="product-price">₦9,900.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    <!-- DISCOUNT DEAL -->
+    <div class="htxt htxt2">
+        <h1>DISCOUNT DEAL</h1>
+        <button>
+            <a href="#">
+                See All Products
+            </a>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+     </div>
+
+     <section class="product-grid container-fluid">
+        <div class="row">
+            <div class="product-card discount-card">
+                <div class="discount-tag">-25%</div>
+                <div class="discount"></div>
+                <h3 class="product-title">Discount 1</h3>
+                <div class="price">
+                    <p class="product-price">₦2,212.50</p>
+                    <p class="discounted">₦2,950.00</p>
+                </div>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card discount-card">
+                <div class="discount-tag">-60%</div>
+                <div class="discount"></div>
+                <h3 class="product-title">Discount 2</h3>
+                <div class="price">
+                    <p class="product-price">₦2,200.00</p>
+                    <p class="discounted">₦5,500.00</p>
+                </div>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card discount-card">
+                <div class="discount-tag">-20%</div>
+                <div class="discount"></div>
+                <h3 class="product-title">Discount 3</h3>
+                <div class="price">
+                    <p class="product-price">₦2,000.00</p>
+                    <p class="discounted">₦2,500.00</p>
+                </div>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card discount-card">
+                <div class="discount-tag">-50%</div>
+                <div class="discount"></div>
+                <h3 class="product-title">Discount 4</h3>
+                <div class="price">
+                    <p class="product-price">₦1,500.00</p>
+                    <p class="discounted">₦3,000.00</p>
+                </div>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- PRODUCT CARDS DRUGS -->
+    <div class="htxt htxt2">
+        <h1>Most Popular</h1>
+        <button>
+            <a href="#">
+                See All Products
+            </a>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+     </div>
+
+    <section class="product-grid container-fluid">
+        <div class="row">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="drug1"></div>
+                <h3 class="product-title">Drug 1</h3>
+                <p class="product-price">₦2,950.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="drug2"></div>
+                <h3 class="product-title">Drug 2</h3>
+                <p class="product-price">₦3,200.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="drug3"></div>
+                <h3 class="product-title">Drug 3</h3>
+                <p class="product-price">₦4,950.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="drug4"></div>
+                <h3 class="product-title">Drug 4</h3>
+                <p class="product-price">₦5,000.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="drug5"></div>
+                <h3 class="product-title">Drug 5</h3>
+                <p class="product-price">₦6,500.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="drug6"></div>
+                <h3 class="product-title">Drug 6</h3>
+                <p class="product-price">₦7,900.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <div class="drug7"></div>
+                <h3 class="product-title">Drug 7</h3>
+                <p class="product-price">₦8,500.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <div class="drug8"></div>
+                <h3 class="product-title">Drug 8</h3>
+                <p class="product-price">₦9,900.00</p>
+                <div class="cart-wish">
+                    <button class="btn add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>      
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    GENERAL COMPANY INFORMATION
+                    <span class="faq-icon">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Sales No:</strong> 08187122408</p>
+                    <p><strong>Customer Care No:</strong> 02015150550, 02015150551, 02015150552</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is MatrizPlaza's phone number?
+                    <span class="faq-icon">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Sales No:</strong> 08187122408</p>
+                    <p><strong>Customer Care No:</strong> 02015150550, 02015150551, 02015150552</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" alt="MatrizPlaza Logo">
+            </a>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Download our app</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Loyalty Scheme</a></li>
+                    <li><a href="#">Pharmacy Service</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Cares Foundation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Head Office: 45, Saka Tinubu Street, Victoria Island, Lagos</p>
+                <p>Sales No: 08187122408</p>
+                <p>Customer Care No: 02015150550, 02015150551, 02015150552</p>
+                <p class="mail"><a href="mailto:matrizplaza@gmail.com">matrizplaza@gmail.com</a></p>
+            </div>
+            <div class="footer-column newsletter">
+                <h4>Subscribe To Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <!-- <div class="footer-certificates">
+                    <img src="img/certificate.png" alt="Certificate">
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Terms & Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>&copy; 2025 - MatrizPlaza. All rights reserved.</p>
+            <div class="social-links">
+                <span>Follow & Engage with us</span>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script/main.js"></script>
+    <script src="script/search.js"></script>   
+    
+</body>
+</html>

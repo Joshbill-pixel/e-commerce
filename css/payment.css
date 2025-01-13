@@ -1,0 +1,123 @@
+/* Main Payment Container */
+.payment-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.payment-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Order Summary */
+.order-summary {
+    flex: 1;
+    min-width: 250px;
+}
+
+.order-summary h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Billing Information */
+.billing-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.billing-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item strong {
+    font-weight: bold;
+}
+
+/* Payment Options */
+.payment-options {
+    flex: 1;
+    min-width: 250px;
+}
+
+.payment-options h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.payment-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.payment-options button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.payment-options button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .payment-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-summary, .billing-info, .payment-options {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-wrapper {
+        padding: 10px;
+    }
+
+    .order-summary, .billing-info, .payment-options {
+        margin-bottom: 15px;
+    }
+
+    .payment-options button {
+        font-size: 14px;
+    }
+}

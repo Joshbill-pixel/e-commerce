@@ -1,0 +1,200 @@
+/* CHECKOUT PAGE STYLES */
+.checkout-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.checkout-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary, .billing-info, .payment-methods {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.order-summary {
+    flex: 1;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.order-summary p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* BILLING INFORMATION FORM */
+#billing-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#billing-form input, #billing-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#billing-form button {
+    background-color: #7bd701;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#billing-form button:hover,
+#billing-form button a:hover  {
+    background-color: #34495e;
+    transition: 1s;
+}
+
+#billing-form button a{
+    text-decoration: none;
+    background-color: #7bd701;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:invalid, textarea:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+input:valid, textarea:valid {
+    border: 1px solid #7bd701;
+}
+#billing-form #error{
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+    color: red;
+    margin-top: 8px;
+}
+
+#success{
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* PAYMENT METHOD STYLES */
+.payment-methods label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* CREDIT CARD FORM */
+.credit-card-form {
+    /* display: ; */
+    margin-top: 20px;
+}
+
+/* .payment-methods input[type="radio"]:checked + .credit-card-form {
+    display: block;
+} */
+
+.credit-card-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.credit-card-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.credit-card-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.credit-card-form button {
+    background-color: #7bd701;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.credit-card-form button:hover {
+    background-color: #34495e;
+    transition: 1s;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .checkout-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-summary, .billing-info, .payment-methods {
+        width: 100%;
+    }
+
+    .credit-card-form input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-summary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    .checkout-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
